@@ -40,7 +40,6 @@ void Player::Update()
 	}
 	
 
-
 }
 
 void Player::Draw()
@@ -57,8 +56,10 @@ void Player::OnCollision(GameObject* pTarget)
 {
 	if (pTarget->GetObjectName() == "Object")
 	{
-		SceneManager* pS = (SceneManager*)FindObject("SceneManeger");
-		pS->ChangeScene(SCENE_ID_hOVER);
+		
+			SceneManager* pS = (SceneManager*)FindObject("SceneManager");
+			pS->ChangeScene(SCENE_ID_hOVER);
+		
 
 
 			//transform_.rotate_.y += 24.0f;
