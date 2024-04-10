@@ -2,6 +2,7 @@
 
 #include "../TestScene.h"
 #include "../PlayScene.h"
+#include"../OVER.h"
 #include "Model.h"
 #include "Image.h"
 #include "Audio.h"
@@ -17,13 +18,13 @@ SceneManager::SceneManager(GameObject* parent)
 void SceneManager::Initialize()
 {
 	//ç≈èâÇÃÉVÅ[ÉìÇèÄîı
-	/*currentSceneID_ = SCENE_ID_TEST;
+	currentSceneID_ = SCENE_ID_hOVER;
 	nextSceneID_ = currentSceneID_;
-	Instantiate<TestScene>(this);*/
+	Instantiate<OVER>(this);
 
-	currentSceneID_ = SCENE_ID_PLAY;
-	nextSceneID_ = currentSceneID_;
-	Instantiate<PlayScene>(this);
+	//currentSceneID_ = SCENE_ID_PLAY;
+	//nextSceneID_ = currentSceneID_;
+	//Instantiate<PlayScene>(this);
 
 }
 
@@ -45,8 +46,8 @@ void SceneManager::Update()
 		switch (nextSceneID_)
 		{
 		case SCENE_ID_TEST: Instantiate<TestScene>(this); break;
-	/*	case SCENE_ID_PLAY: Instantiate<PlayScene>(this); break;
-		case SCENE_ID_OVER: Instantiate<OverScene>(this); break;*/
+		case SCENE_ID_PLAY: Instantiate<PlayScene>(this); break;
+		case SCENE_ID_hOVER: Instantiate<OVER>(this); break;
 
 		}
 		Audio::Initialize();

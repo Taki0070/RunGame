@@ -57,11 +57,11 @@ void Player::OnCollision(GameObject* pTarget)
 {
 	if (pTarget->GetObjectName() == "Object")
 	{
-	/*	SceneManager* pS = (SceneManager*)FindObject("SceneManeger");
-		pS->ChangeScene(SCENE_ID_OVER);*/
+		SceneManager* pS = (SceneManager*)FindObject("SceneManeger");
+		pS->ChangeScene(SCENE_ID_hOVER);
 
 
-			transform_.rotate_.y += 24.0f;
+			//transform_.rotate_.y += 24.0f;
 		
 		//transform_.scale_.y += 1; ”»’è‚Íok
 	}
