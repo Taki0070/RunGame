@@ -5,7 +5,7 @@ class Object
 	:public GameObject
 {
 	int hModel_;
-
+	bool isAlive_;
 public:
 	//コンストラクタ
 	//引数：parent  親オブジェクト（SceneManager）
