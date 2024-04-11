@@ -19,7 +19,6 @@ void Object::Initialize()
 	transform_.position_ = {-0.1, 0, 10 };//ç¿ïWÇåàÇﬂÇ»Ç¢Ç∆ìñÇΩÇËîªíËÇ™Ç®Ç©ÇµÇ¢
 
 	//XMVECTOR pos[]{ {-1.3, 0, 10 }, { -0.1, 0, 10 }, { 1.2, 0, 10 } }; //ç∂,íÜêS,âE
-	XMFLOAT3 pos[]{ {-1.3, 0, 10 }, { -0.1, 0, 10 }, { 1.2, 0, 10 } };
 	
 
 #if 0
@@ -56,6 +55,10 @@ void Object::Update()
 
 void Object::Draw()
 {
+	//XMFLOAT3 pos[] = { {-1.3, 0, 10 }, { -0.1, 0, 10 }, { 1.2, 0, 10 } };
+
+
+
 	Model::SetTransform(hModel_, transform_);
 	Model::Draw(hModel_);
 

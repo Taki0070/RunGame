@@ -103,6 +103,7 @@
     <ClCompile Include="OVER.cpp" />
     <ClCompile Include="ClearScene.cpp" />
     <ClCompile Include="Flag.cpp" />
+    <ClCompile Include="CTimer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\BoxCollider.h">
@@ -182,6 +183,7 @@
     <ClInclude Include="OVER.h" />
     <ClInclude Include="ClearScene.h" />
     <ClInclude Include="Flag.h" />
+    <ClInclude Include="CTimer.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Assets\Shader\Simple2D.hlsl">
