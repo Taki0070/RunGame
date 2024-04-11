@@ -2,6 +2,7 @@
 
 #include "../TestScene.h"
 #include "../PlayScene.h"
+#include"../ClearScene.h"
 #include"../OVER.h"
 #include "Model.h"
 #include "Image.h"
@@ -47,6 +48,7 @@ void SceneManager::Update()
 		{
 		case SCENE_ID_TEST: Instantiate<TestScene>(this); break;
 		case SCENE_ID_PLAY: Instantiate<PlayScene>(this); break;
+		case SCENE_ID_CLEAR: Instantiate<ClearScene>(this); break;
 		case SCENE_ID_hOVER: Instantiate<OVER>(this); break;
 
 		}

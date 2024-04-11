@@ -101,6 +101,8 @@
     <ClCompile Include="PlayScene.cpp" />
     <ClCompile Include="Stage.cpp" />
     <ClCompile Include="OVER.cpp" />
+    <ClCompile Include="ClearScene.cpp" />
+    <ClCompile Include="Flag.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\BoxCollider.h">
@@ -178,6 +180,8 @@
     <ClInclude Include="PlayScene.h" />
     <ClInclude Include="Stage.h" />
     <ClInclude Include="OVER.h" />
+    <ClInclude Include="ClearScene.h" />
+    <ClInclude Include="Flag.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Assets\Shader\Simple2D.hlsl">
