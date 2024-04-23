@@ -1,18 +1,15 @@
 #pragma once
 #include"Engine/GameObject.h"
 
-class Object
+
+class ObjectR
 	:public GameObject
 {
-
-	bool isAlive_;
 public:
-	//コンストラクタ
-	//引数：parent  親オブジェクト（SceneManager）
-	Object(GameObject* parent);
-	~Object();
+	ObjectR(GameObject* parent);
+	~ObjectR();
 	int hModel_;
-	
+
 	//初期化
 	void Initialize() override;
 
@@ -26,4 +23,6 @@ public:
 	void Release() override;
 
 	void OnCollision(GameObject* pTarget) override;
+
 };
+

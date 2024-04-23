@@ -24,6 +24,9 @@
       <UniqueIdentifier>{47a6a3f5-8cfd-436b-8d58-beccd108f3f3}</UniqueIdentifier>
       <Extensions>hlsl</Extensions>
     </Filter>
+    <Filter Include="OB">
+      <UniqueIdentifier>{2a30c70d-9638-4769-8ad5-dfca517fc0d3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine\BoxCollider.cpp">
@@ -96,7 +99,6 @@
     <ClCompile Include="Engine\VFX.cpp">
       <Filter>01Engine\ResourceManager</Filter>
     </ClCompile>
-    <ClCompile Include="Object.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayScene.cpp" />
     <ClCompile Include="Stage.cpp" />
@@ -104,6 +106,15 @@
     <ClCompile Include="ClearScene.cpp" />
     <ClCompile Include="Flag.cpp" />
     <ClCompile Include="CTimer.cpp" />
+    <ClCompile Include="Object.cpp">
+      <Filter>OB</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectR.cpp">
+      <Filter>OB</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectL.cpp">
+      <Filter>OB</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\BoxCollider.h">
@@ -176,7 +187,6 @@
     <ClInclude Include="Engine\VFX.h">
       <Filter>01Engine\ResourceManager</Filter>
     </ClInclude>
-    <ClInclude Include="Object.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayScene.h" />
     <ClInclude Include="Stage.h" />
@@ -184,6 +194,15 @@
     <ClInclude Include="ClearScene.h" />
     <ClInclude Include="Flag.h" />
     <ClInclude Include="CTimer.h" />
+    <ClInclude Include="Object.h">
+      <Filter>OB</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectR.h">
+      <Filter>OB</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectL.h">
+      <Filter>OB</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Assets\Shader\Simple2D.hlsl">

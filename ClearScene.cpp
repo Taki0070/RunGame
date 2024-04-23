@@ -1,6 +1,7 @@
 #include "ClearScene.h"
 #include"Engine/Image.h"
-
+#include"Engine/Input.h"
+#include"Engine/SceneManager.h"
 ClearScene::ClearScene(GameObject* parent)
 	:GameObject(parent,"ClearScene"), hPict_(-1)
 {
@@ -16,6 +17,11 @@ void ClearScene::Initialize()
 
 void ClearScene::Update()
 {
+	if (Input::IsKey(DIK_SPACE))
+	{
+		SceneManager* pS = (SceneManager*)FindObject("SceneManager");
+		pS->ChangeScene(SCENE_ID_TEST);
+	}
 }
 
 void ClearScene::Draw()

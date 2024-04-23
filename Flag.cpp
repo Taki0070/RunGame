@@ -11,9 +11,10 @@ void Flag::Initialize()
 	assert(hModel_ >= 0);
 
 	transform_.scale_.y =2 ;
-	transform_.position_ = { -1.3, 0, 10 };
+	transform_.position_ = { -1.3, 0, 60 };
 	SphereCollider* collision = new SphereCollider({ 0, 0, 0 }, -0.5); //Å@0.1fÇ…ÇµÇΩÇÁè¨Ç≥Ç≠Å@îªíË
 	AddCollider(collision);
+
 }
 
 void Flag::Update()

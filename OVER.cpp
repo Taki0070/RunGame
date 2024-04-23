@@ -1,6 +1,7 @@
 #include "OVER.h"
 #include"Engine/Image.h"
 #include"Engine/SceneManager.h"
+#include"Engine/Input.h"
 
 OVER::OVER(GameObject* parent)
 	:GameObject(parent, "OVER"), hPict_(-1)
@@ -17,7 +18,11 @@ void OVER::Initialize()
 //ok
 void OVER::Update()
 {
-
+	if (Input::IsKey(DIK_SPACE))
+	{
+		SceneManager* pS = (SceneManager*)FindObject("SceneManager");
+		pS->ChangeScene(SCENE_ID_TEST);
+	}
 }
 
 void OVER::Draw()
