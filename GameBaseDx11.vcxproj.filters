@@ -115,6 +115,7 @@
     <ClCompile Include="ObjectL.cpp">
       <Filter>OB</Filter>
     </ClCompile>
+    <ClCompile Include="life.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\BoxCollider.h">
@@ -203,6 +204,7 @@
     <ClInclude Include="ObjectL.h">
       <Filter>OB</Filter>
     </ClInclude>
+    <ClInclude Include="life.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Assets\Shader\Simple2D.hlsl">

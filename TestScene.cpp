@@ -5,16 +5,20 @@
 
 //コンストラクタ
 TestScene::TestScene(GameObject * parent)
-	: GameObject(parent, "TestScene"), hPict_(-1)
+	: GameObject(parent, "TestScene"), hPict_(-1),hPict2(-1)
 {
 }
 
 //初期化
 void TestScene::Initialize()
 {
-	hPict_ = Image::Load("Image\\start.png");
+
+	//hPict_ = Image::Load("Image\\Back.jpg");
+	//assert(hPict_ >= 0);	
+	hPict_ = Image::Load("Image\\STN.png");
 	assert(hPict_ >= 0);
-	transform_.scale_ = { 4,10,5, };
+
+	transform_.scale_ = { 6,5,5 };
 }
 
 //更新
@@ -30,6 +34,7 @@ void TestScene::Update()
 //描画
 void TestScene::Draw()
 {
+
 	Image::SetTransform(hPict_, transform_);
 	Image::Draw(hPict_);
 }

@@ -21,12 +21,12 @@ void ObjectL::Initialize()
 	transform_.position_ = { -1.3, 0, 10 };
 
 	float z = (float)rand() / RAND_MAX;
-	transform_.position_.z = 50.0 * (z * 5.0);
+	transform_.position_.z = 57.0 * (z * 5.0);
 }
 
 void ObjectL::Update()
 {
-	transform_.position_.z -= 0.7;
+	transform_.position_.z -= 0.8;
 }
 
 void ObjectL::Draw()

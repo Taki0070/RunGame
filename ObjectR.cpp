@@ -22,12 +22,12 @@ void ObjectR::Initialize()
 	transform_.position_ = { 1.2, 0.5, 10 };
 
 	float z = (float)rand() / RAND_MAX;
-	transform_.position_.z = 50.0 * (z * 5.0);
+	transform_.position_.z = 60.0 * (z * 5.0);
 }
 
 void ObjectR::Update()
 {//オブジェクトがなかったら
-	transform_.position_.z -= 0.5;
+	transform_.position_.z -= 0.4;
 
 }
 

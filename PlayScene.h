@@ -8,7 +8,7 @@ class PlayScene
 public:
 	
 	PlayScene(GameObject* parent);
-	int ObjectNum{ 15 };
+	int ObjectNum{ 20 };
 
 		//‰Šú‰»
 		void Initialize() override;

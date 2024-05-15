@@ -5,6 +5,7 @@
 #include"ObjectL.h"
 #include"Flag.h"
 #include"Stage.h"
+#include"life.h"
 //コンストラクタ
 
 PlayScene::PlayScene(GameObject* parent)
@@ -18,11 +19,15 @@ void PlayScene::Initialize()
 	Instantiate<Stage>(this);
 	for (int i = 0; i < ObjectNum; i++)
 	{
-		Instantiate<Object>(this);
+		 Instantiate<Object>(this);
 		Instantiate<ObjectR>(this);
 		Instantiate<ObjectL>(this);
 	}
-
+	//Instantiate<Object>(this);
+	////for (int i = 0; i < 3; i++) {
+	////	Instantiate<life>(this);
+	////
+	////}
 	Instantiate<Flag>(this);
 	Instantiate<Player>(this);
 

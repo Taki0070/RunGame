@@ -6,6 +6,7 @@ class TestScene : public GameObject
 {
 private:
 	int hPict_;
+	int hPict2;
 public:
 	//コンストラクタ
 	//引数：parent  親オブジェクト（SceneManager）

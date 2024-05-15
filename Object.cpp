@@ -19,7 +19,7 @@ void Object::Initialize()
 	SphereCollider* collision = new SphereCollider({ 0, 0, 0 }, -0.5); //　0.1fにしたら小さく　判定
 	AddCollider(collision);//当たり判定
 	transform_.scale_.x = 0.8f;//スケール
-	transform_.position_= { -0.1, 0, 10 };
+	transform_.position_= { -0.1, 0, 8 };
 
 	//transform_.position_ = {-0.1, 0, 10 };//座標を決めないと当たり判定がおかしい
 	//XMVECTOR pos[] = { {-1.3, 0, 10 }, { -0.1, 0, 10 }, { 1.2, 0, 10 } }; //左,中心,右
@@ -33,7 +33,7 @@ void Object::Initialize()
 	transform_.position_.z = 10.0 * (z * 1.0);
 #endif 
 	float z = (float)rand() / RAND_MAX;
-	transform_.position_.z = 50.0 * (z * 5.0);
+	transform_.position_.z = 55.0 * (z * 5.0);
 
 
 	/*Transform kai;
@@ -72,15 +72,7 @@ void Object::Update()
 
 void Object::Draw()
 {
-	/*Transform Left;
-	Left.position_ = { -1.3, 0, 10 };
-	Transform Right;
-	Right.position_ = { 1.2, 0, 10 };
-	Transform None;
-	None.position_ = { -0.1, 0, 10 };*/
-	//画面外に行ったらdelete と ik++
-	/*for (int ik = 0; ik  < 5; ik++)
-	{*/
+	
 	//	switch (ik)
 	//	{
 	//	case 1:	
@@ -112,8 +104,19 @@ void Object::Draw()
 	//		break;
 	//	}
 	//}
+	//transform_.position_ = { -0.1, 0, 8 };
 
-	
+	//if (transform_.position_.z < -10)//繰り返し
+	//{
+	//	transform_.position_ = { -0.1, 0, 30 };
+	//	Model::SetTransform(hModel_, transform_);
+	//	Model::Draw(hModel_);
+	//}
+	//else
+	//{
+	//	Model::SetTransform(hModel_, transform_);
+	//	Model::Draw(hModel_);
+	//}
 
 	Model::SetTransform(hModel_,transform_ );
 	Model::Draw(hModel_);

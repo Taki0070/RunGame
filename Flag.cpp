@@ -7,13 +7,17 @@ Flag::Flag(GameObject* parent)
 
 void Flag::Initialize()
 {
-	hModel_ = Model::Load("Model\\flag.fbx");
+	hModel_ = Model::Load("Model\\flag3.fbx");
 	assert(hModel_ >= 0);
 
 	transform_.scale_.y =2 ;
 	transform_.position_ = { -1.3, 0, 60 };
 	SphereCollider* collision = new SphereCollider({ 0, 0, 0 }, -0.5); //　0.1fにしたら小さく　判定
 	AddCollider(collision);
+
+	// 背景色、フォント、
+	// エフェクト ,
+	//残機 → Model表示 for 回す x方向に +iしながら
 
 }
 

@@ -151,6 +151,7 @@
     <ClCompile Include="Engine\Texture.cpp" />
     <ClCompile Include="Engine\Transform.cpp" />
     <ClCompile Include="Flag.cpp" />
+    <ClCompile Include="life.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="ObjectL.cpp" />
     <ClCompile Include="ObjectR.cpp" />
@@ -187,6 +188,7 @@
     <ClInclude Include="Engine\Texture.h" />
     <ClInclude Include="Engine\Transform.h" />
     <ClInclude Include="Flag.h" />
+    <ClInclude Include="life.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="ObjectL.h" />
     <ClInclude Include="ObjectR.h" />
